@@ -119,25 +119,25 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xch-ur-cxD">
                                         <rect key="frame" x="-2" y="0.0" width="209" height="31"/>
                                         <connections>
-                                            <action selector="changeRedAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="8q1-gF-WE5"/>
+                                            <action selector="changeRGBAuction:" destination="BYZ-38-t0r" eventType="valueChanged" id="cD6-pd-Z5c"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JUn-hJ-RZQ">
+                                    <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JUn-hJ-RZQ">
                                         <rect key="frame" x="-2" y="80" width="209" height="31"/>
                                         <connections>
-                                            <action selector="changeGreenAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="bk9-v3-BoU"/>
+                                            <action selector="changeRGBAuction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Rtq-8O-uFB"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YJa-ml-OQN">
+                                    <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YJa-ml-OQN">
                                         <rect key="frame" x="-2" y="160" width="209" height="31"/>
                                         <connections>
-                                            <action selector="changeBlueAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="8LW-Ze-nOZ"/>
+                                            <action selector="changeRGBAuction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ptO-3Z-CTn"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GS1-DH-OHP">
+                                    <slider opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GS1-DH-OHP">
                                         <rect key="frame" x="-2" y="240" width="209" height="31"/>
                                         <connections>
-                                            <action selector="changeAlphaAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZCB-Xp-WU6"/>
+                                            <action selector="changeRGBAuction:" destination="BYZ-38-t0r" eventType="valueChanged" id="6o3-Ky-mFQ"/>
                                         </connections>
                                     </slider>
                                 </subviews>
