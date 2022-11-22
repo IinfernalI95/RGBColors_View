@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         setupSwitch()
     }
     
-    fileprivate func setupView() {
+    private func setupView() {
         //MARK: View
         mainView.backgroundColor = UIColor(red: 1/255, green: 1/255, blue: 1/255, alpha: 1.0)
         mainView.layer.cornerRadius = 15
