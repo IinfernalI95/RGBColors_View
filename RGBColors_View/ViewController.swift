@@ -46,17 +46,22 @@ class ViewController: UIViewController {
     private func setupSliders() {
         //MARK: Sliders
         redSlider.value = 1
-        greenSlider.value = 1
-        blueSlider.value = 1
-        alphaSlider.value = 1
         redSlider.minimumValue = 1
         redSlider.maximumValue = 255
+        redSlider.minimumTrackTintColor = .red
+        greenSlider.value = 1
         greenSlider.minimumValue = 1
         greenSlider.maximumValue = 255
+        greenSlider.minimumTrackTintColor = .green
+        blueSlider.value = 1
         blueSlider.minimumValue = 1
         blueSlider.maximumValue = 255
+        blueSlider.minimumTrackTintColor = .blue
+        alphaSlider.value = 1
         alphaSlider.minimumValue = 0
         alphaSlider.maximumValue = 1
+        alphaSlider.minimumTrackTintColor = .lightGray.withAlphaComponent(0.05)
+        alphaSlider.maximumTrackTintColor = .lightGray
     }
     
     private func setupLabels() {
