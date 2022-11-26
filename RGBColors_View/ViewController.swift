@@ -70,7 +70,7 @@ class ViewController: UIViewController {
         greenColorLabel.text = "GREEN:"
         blueColorLabel.text = "BLUE:"
         alphaColorLabel.text = "APLHA:"
-        changeTextValueLabel(5)
+        changeTextValueLabel(nil)
     }
     
     private func setupSwitch() {
@@ -87,16 +87,16 @@ class ViewController: UIViewController {
             alpha: CGFloat(alphaSlider.value))
     }
     
-    private func changeTextValueLabel(_ senderTag: Int) {
-        switch senderTag {
+    private func changeTextValueLabel(_ sender: UISlider?) {
+        switch sender?.tag {
         case 0:
-            redValueLabel.text = "\(Int(redSlider.value))"
+            redValueLabel.text = "\(Int(sender!.value))"
         case 1:
-            greenValueLabel.text = "\(Int(greenSlider.value))"
+            greenValueLabel.text = "\(Int(sender!.value))"
         case 2:
-            blueValueLabel.text = "\(Int(blueSlider.value))"
+            blueValueLabel.text = "\(Int(sender!.value))"
         case 3:
-            alphaValueLabel.text = "\(Int(alphaSlider.value))"
+            alphaValueLabel.text = "\(Int(sender!.value))"
         default:
             [
                 redValueLabel,
@@ -108,7 +108,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func changeRGBAuction(_ sender: UISlider) {
-        changeTextValueLabel(sender.tag)
+        changeTextValueLabel(sender)
         changeColorView()
     }
     
